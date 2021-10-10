@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula 1</title>
+    <link rel="stylesheet" href="main.css">
+    
+    <script src="formulaone-api.js" defer></script>
+</head>
+<body>
+    <div class="main-page">
+        <h1>Formula One Standings</h1>
+        <form name="formula1Form" id="formula1Form">
+            <label for="season">Season:</label>
+            <input type="text" name="season" id="season">
+            
+            <label for="round">Round:</label>
+            <input type="text" name="round" id="round">
+            
+            <button type="submit" id="submit-button">Search</button>      
+        </form>
+    </div>
+    <div class="driverTable"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>
